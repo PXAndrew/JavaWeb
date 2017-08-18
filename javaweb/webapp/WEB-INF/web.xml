@@ -62,4 +62,37 @@
     </servlet-mapping>
 
 
+
+    <!--
+
+        <url-patternt> 必须保证唯一性，而且必须使用 / 打头
+        servlet 的映射支持通配符映射（ * 表示任意字符）
+
+        第一种 /* 任意的资源路径都可以访问 servlet。 /system/* 请求必须以 /system/打头 才可以访问。
+        第二种 *.拓展名。 如 *.do 就必须以.do 作结尾才可以访问
+
+        在映射 servlet 的时候， <servlet-name> 元素的文本内容不能是 default
+        因为在 tomcat 中有一个叫 default 的 servlet 专门处理静态资源 （html，js，css 图片等）
+
+    -->
+
+    <welcome-file-list>
+        <welcome-file>login.html</welcome-file>
+    </welcome-file-list>
+    <!--
+        metadata-complete="true" 是否忽略 Web 组件扫描注解
+        metadata-complete="false" 是否忽略 Web 组件扫描注解   // 缺省情况下默认是false
+    -->
+
+
+    <servlet>
+        <servlet-name>m1</servlet-name>
+        <servlet-class>com.andrew.servletInit.MappingServlet1</servlet-class>
+        <!-- 如果想启动服务器就初始化就要配置一个属性 load-on-startup 的属性值越小优先级越高 -->
+        <load-on-startup>1</load-on-startup>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>m1</servlet-name>
+        <url-pattern>/m1</url-pattern>
+    </servlet-mapping>
 </web-app>

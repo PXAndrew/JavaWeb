@@ -13,6 +13,5 @@ public class CalculaterServlet extends HttpServlet {
     @Override
     protected void service(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
 
-
     }
 }
