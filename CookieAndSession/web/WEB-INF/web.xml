@@ -6,5 +6,9 @@
          version="3.0" metadata-complete="false">
 
 
+    <context-param>
+        <param-name>encoding</param-name>
+        <param-value>utf-8</param-value>>
+    </context-param>
 
 </web-app>
