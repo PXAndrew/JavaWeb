@@ -31,6 +31,5 @@ public class ServletContextDemo extends HttpServlet {
 
         // 获取所有的全局初始化变量
         System.out.println(super.getServletContext().getInitParameterNames());
-
     }
 }
