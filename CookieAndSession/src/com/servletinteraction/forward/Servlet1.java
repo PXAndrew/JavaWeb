@@ -2,13 +2,14 @@ package com.servletinteraction.forward;
 
 import javax.servlet.ServletException;
 import javax.servlet.annotation.WebServlet;
+import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import java.io.IOException;
 import java.io.PrintWriter;
 
 @WebServlet("/forward/servlet1")
-public class Servlet1 extends Servlet2 {
+public class Servlet1 extends HttpServlet {
 
     @Override
     protected void service(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
@@ -52,5 +53,15 @@ public class Servlet1 extends Servlet2 {
      *
      * 正常情况下，客户端是不能访问 WEB-INF 下的资源。 但是 forward 可以访问 WEB-INF 下的资源。
      *
+     */
+
+    /**
+     * 请求转发的特点
+     * 1.浏览器地址不发生改变
+     * 2.请求转发只发送一个请求
+     * 3.共享同一个请求中的数据
+     * 4.最终响应给浏览器的由 servlet2 来决定
+     * 5.请求转发不能跨域访问，只能请求当前项目中的资源
+     * 6.请求转发可以访问 WEB-INF 中的资源
      */
 }

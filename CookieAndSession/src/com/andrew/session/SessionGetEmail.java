@@ -17,12 +17,12 @@ public class SessionGetEmail extends HttpServlet {
         req.setCharacterEncoding("UTF-8");
         resp.setContentType("text/html;charset=utf-8");
         PrintWriter printWriter = resp.getWriter();
-        String username = null;
 
         HttpSession httpSession = req.getSession();
-        username = (String) httpSession.getAttribute("username");
-//        String username = req.getSession()
-        printWriter.print("欢迎"+ username +"</br>");
+        User user = (User) httpSession.getAttribute("USER_IN_SESSION");
+
+//        String username = req.getSession();
+        printWriter.print("欢迎"+ user.name +"</br>");
         printWriter.print("邮件");
 
     }
