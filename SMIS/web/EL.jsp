@@ -11,9 +11,7 @@
     <title>$Title$</title>
 </head>
 <body>
-
     <%
-
         // jsp 四大作用域
         pageContext.setAttribute("msg", "pageContextValue");
         request.setAttribute("msg", "requestValue");
@@ -70,9 +68,6 @@
     <%--从 tomcat 7 开始，可以支持在EL语法中调用方法--%>
 
 <%--tomcat 7 开始，可以通过对象创建方法--%>
-
-
-
 
 </body>
 </html>
