@@ -18,6 +18,7 @@ taglibs-standard-spec.jar   // jstl 接口
 
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c"%>
+<%@ taglib uri="http://java.sun.com/jsp/jstl/fmt" prefix="fmt"%>
 <html>
 <head>
     <title>jstl</title>
@@ -57,7 +58,22 @@ taglibs-standard-spec.jar   // jstl 接口
     </c:forEach>
     <br>
 
+    <%--迭代 list--%>
+    <%
+        pageContext.setAttribute("list", java.util.Arrays.asList("A", "B", "C", "D"));
+    %>
 
+    <c:forEach items="${list}" var="letter">
+        ${letter}
+    </c:forEach>
+    <br>
+
+    <%
+        pageContext.setAttribute("data", new java.util.Date());
+    %>
+
+    北京时间：${data}<br>
+    <fmt:formatDate value="${data}" pattern="yyyy-MM-dd HH:mm:ss"></fmt:formatDate>
 
 
 </body>

@@ -29,7 +29,7 @@ public class StudentDaoImpl implements IStudentDao {
     @Override
     public void update(Student student) {
 
-        Template.dmlUpdate("UPDATE s_student SET name = ?, age = ? WHERE id = ?", student.getName(), student.getId(), student.getId());
+        Template.dmlUpdate("UPDATE s_student SET name = ?, age = ? WHERE id = ?", student.getName(), student.getAge(), student.getId());
 
     }
 
