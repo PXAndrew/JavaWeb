@@ -10,11 +10,9 @@ import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import java.io.IOException;
-import java.util.List;
 
-@WebServlet("/student/list")
-public class ListStudentServlet extends HttpServlet {
-
+@WebServlet("/student/edit")
+public class EditStudentServlet extends HttpServlet {
 
     private IStudentDao studentDao;
     @Override
@@ -24,10 +22,11 @@ public class ListStudentServlet extends HttpServlet {
 
     @Override
     protected void service(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
-        List<Student> students = students = studentDao.list();
-        req.setAttribute("students", students);
-        req.getRequestDispatcher("/WEB-INF/views/student/student_list.jsp").forward(req, resp);
-//      找到 path 路径 req.getContextPath()
-
+        String id = req.getParameter("id");
+        if (id != null) {
+            Student student = studentDao.get(Long.parseLong(id));
+            req.setAttribute("student", student);
+        }
+        req.getRequestDispatcher("/WEB-INF/views/student/student_edit.jsp").forward(req, resp);
     }
 }
