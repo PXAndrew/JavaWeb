@@ -88,6 +88,5 @@ public class Student extends HttpServlet{
             req.setAttribute("student", student);
         }
         req.getRequestDispatcher("/WEB-INF/views/student/student_edit.jsp").forward(req, resp);
-
     }
 }
