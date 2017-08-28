@@ -66,7 +66,7 @@ public class Student extends HttpServlet{
             student.setName(name);
             student.setAge(age);
             student.setId(Long.valueOf(id));
-            studentDao.update(student);
+             studentDao.update(student);
         }
 
         resp.sendRedirect(req.getContextPath() + "/student?cmd=list");
