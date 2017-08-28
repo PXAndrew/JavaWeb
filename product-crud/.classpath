@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER"/>
+	<classpathentry kind="src" path="src"/>
+	<classpathentry kind="src" path="test"/>
+	<classpathentry kind="lib" path="web/WEB-INF/lib/lombok.jar"/>
+	<classpathentry kind="lib" path="web/WEB-INF/lib/mysql-connector-java-5.1.43-bin.jar"/>
+	<classpathentry kind="lib" path="web/WEB-INF/lib/druid-1.1.2.jar"/>
+	<classpathentry kind="lib" path="web/WEB-INF/lib/el-api.jar"/>
+	<classpathentry kind="lib" path="web/WEB-INF/lib/jsp-api.jar"/>
+	<classpathentry kind="lib" path="web/WEB-INF/lib/servlet-api.jar"/>
+	<classpathentry kind="lib" path="web/WEB-INF/lib/taglibs-standard-impl-1.2.5.jar"/>
+	<classpathentry kind="lib" path="web/WEB-INF/lib/taglibs-standard-spec-1.2.5.jar"/>
+	<classpathentry kind="var" path="APPLICATION_HOME_DIR/lib/junit-4.12.jar"/>
+	<classpathentry kind="output" path="web/WEB-INF/classes"/>
+</classpath>
