@@ -1,3 +1,4 @@
+<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 <%--
   Created by IntelliJ IDEA.
   User: Andrew
@@ -42,10 +43,9 @@
                 <td>货品分类</td>
                 <td>
                     <select name="dir_id">
-                        <option value="1" ${requestScope.product.dir_id == 1 ? "selected" : ""}>鼠标</option>
-                        <option value="2" ${requestScope.product.dir_id == 2 ? "selected" : ""}>无线鼠标</option>
-                        <option value="3" ${requestScope.product.dir_id == 3 ? "selected" : ""}>有线鼠标</option>
-                        <option value="4" ${requestScope.product.dir_id == 4 ? "selected" : ""}>游戏鼠标</option>
+                        <c:forEach items="${requestScope.dirs}" var="dir">
+                            <option value="${dir.id}" ${requestScope.product.dir_id == dir.id ? "selected" : ""}>${dir.dirName}</option>
+                        </c:forEach>>
                     </select>
                 </td>
             </tr>

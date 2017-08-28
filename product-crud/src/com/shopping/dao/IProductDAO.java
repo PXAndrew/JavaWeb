@@ -5,9 +5,9 @@ import java.util.List;
 
 public interface IProductDAO {
 
-    void save(Product product);
+    void save(Product obj);
 
-    void update(Product product);
+    void update(Product obj);
 
     void delete(Long id);
 

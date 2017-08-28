@@ -22,14 +22,14 @@ public class IProductDAOTest {
     @org.junit.Test
     public void update() throws Exception {
 
-        Product product = productDAO.get(22L);
-        product.setProductName("渣渣航");
+        Product product = productDAO.get(24L);
+        product.setProductName("jiaojian");
         productDAO.update(product);
     }
 
     @org.junit.Test
     public void delete() throws Exception {
-        productDAO.delete(22L);
+        productDAO.delete(25L);
 
     }
 

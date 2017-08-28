@@ -5,12 +5,6 @@
 	<contentEntry url="file://$MODULE_DIR$">
 		<testFolder url="file://$MODULE_DIR$/test"/>
 	</contentEntry>
-	<lib name="lombok.jar" scope="COMPILE">
-		<relative-module-cls project-related="jar://$PROJECT_DIR$/web/WEB-INF/lib/lombok.jar!/"/>
-	</lib>
-	<lib name="mysql-connector-java-5.1.43-bin.jar" scope="COMPILE">
-		<relative-module-cls project-related="jar://$PROJECT_DIR$/web/WEB-INF/lib/mysql-connector-java-5.1.43-bin.jar!/"/>
-	</lib>
 	<lib name="druid-1.1.2.jar" scope="COMPILE">
 		<relative-module-cls project-related="jar://$PROJECT_DIR$/web/WEB-INF/lib/druid-1.1.2.jar!/"/>
 	</lib>
@@ -19,6 +13,12 @@
 	</lib>
 	<lib name="jsp-api.jar" scope="COMPILE">
 		<relative-module-cls project-related="jar://$PROJECT_DIR$/web/WEB-INF/lib/jsp-api.jar!/"/>
+	</lib>
+	<lib name="lombok.jar" scope="COMPILE">
+		<relative-module-cls project-related="jar://$PROJECT_DIR$/web/WEB-INF/lib/lombok.jar!/"/>
+	</lib>
+	<lib name="mysql-connector-java-5.1.43-bin.jar" scope="COMPILE">
+		<relative-module-cls project-related="jar://$PROJECT_DIR$/web/WEB-INF/lib/mysql-connector-java-5.1.43-bin.jar!/"/>
 	</lib>
 	<lib name="servlet-api.jar" scope="COMPILE">
 		<relative-module-cls project-related="jar://$PROJECT_DIR$/web/WEB-INF/lib/servlet-api.jar!/"/>

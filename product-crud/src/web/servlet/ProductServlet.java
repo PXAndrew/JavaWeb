@@ -1,7 +1,9 @@
 package web.servlet;
 
 import com.shopping.dao.IProductDAO;
+import com.shopping.dao.IProductDirDAO;
 import com.shopping.dao.impl.ProductDAOImpl;
+import com.shopping.dao.impl.ProductDirDAOImpl;
 import com.shopping.domain.Product;
 
 import javax.servlet.ServletException;
@@ -17,10 +19,12 @@ import java.util.List;
 public class ProductServlet extends HttpServlet {
 
     private IProductDAO productDAO;
+    private IProductDirDAO productdirDAO;
 
     @Override
     public void init() throws ServletException {
         productDAO = new ProductDAOImpl();
+        productdirDAO = new ProductDirDAOImpl();
     }
 
     @Override
@@ -43,6 +47,7 @@ public class ProductServlet extends HttpServlet {
 
         List<Product> products = productDAO.list();
         req.setAttribute("products", products);
+        req.setAttribute("dirs", productdirDAO.list());
         req.getRequestDispatcher("/WEB-INF/product/views/productList.jsp").forward(req, resp);
 
     }
@@ -63,17 +68,17 @@ public class ProductServlet extends HttpServlet {
     }
 
     protected void delete(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
-
+        String id = req.getParameter("id");
+        productDAO.delete(Long.valueOf(id));
+        resp.sendRedirect(req.getContextPath() + "/product?cmd=list");
     }
 
     protected void edit(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
         String id = req.getParameter("id");
-        System.out.println(id);
         if (hasLength(id)) {
-            System.out.println(id);
             req.setAttribute("product", productDAO.get(Long.valueOf(id)));
-            System.out.println(productDAO.get(Long.valueOf(id)));
         }
+        req.setAttribute("dirs", productdirDAO.list());
         req.getRequestDispatcher("/WEB-INF/product/views/productEdit.jsp").forward(req, resp);
     }
 
@@ -85,7 +90,6 @@ public class ProductServlet extends HttpServlet {
         String costPrice = request.getParameter("costPrice");
         String cutoff = request.getParameter("cutoff");
         String dir_id = request.getParameter("dir_id");
-        System.out.println(dir_id);
 
         obj.setProductName(productName);
         obj.setBrand(brand);

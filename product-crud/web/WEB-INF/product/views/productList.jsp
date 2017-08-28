@@ -29,7 +29,14 @@
         <tr style="background-color: ${vs.count % 2 == 0 ? "gray" : ""};">
             <th>${product.id}</th>
             <th>${product.productName}</th>
-            <th>${product.dir_id}</th>
+            <th>
+
+                <c:forEach items="${requestScope.dirs}" var="dir">
+                    <c:if test="${dir.id == product.dir_id}">
+                        ${dir.dirName}
+                    </c:if>
+                </c:forEach>
+            </th>
             <th>${product.salePrice}</th>
             <th>${product.supplier}</th>
             <th>${product.brand}</th>
@@ -37,7 +44,7 @@
             <th>${product.costPrice}</th>
             <th>
                 <a href="${pageContext.request.contextPath}/product?cmd=edit&id=${product.id}">编辑</a>      |
-                <a href="${pageContext.request.contextPath}/product/delete?id=${student.id}">删除</a>
+                <a href="${pageContext.request.contextPath}/product?cmd=delete&id=${product.id}">删除</a>
             </th>
         </tr>
     </c:forEach>
