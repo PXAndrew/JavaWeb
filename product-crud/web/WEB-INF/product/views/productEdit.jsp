@@ -44,7 +44,7 @@
                 <td>
                     <select name="dir_id">
                         <c:forEach items="${requestScope.dirs}" var="dir">
-                            <option value="${dir.id}" ${requestScope.product.dir_id == dir.id ? "selected" : ""}>${dir.dirName}</option>
+                            <option value="${dir.id}" ${requestScope.product.productDir.id == dir.id ? "selected" : ""}>${dir.dirName}</option>
                         </c:forEach>>
                     </select>
                 </td>

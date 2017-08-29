@@ -29,14 +29,7 @@
         <tr style="background-color: ${vs.count % 2 == 0 ? "gray" : ""};">
             <th>${product.id}</th>
             <th>${product.productName}</th>
-            <th>
-
-                <c:forEach items="${requestScope.dirs}" var="dir">
-                    <c:if test="${dir.id == product.dir_id}">
-                        ${dir.dirName}
-                    </c:if>
-                </c:forEach>
-            </th>
+            <th>${product.productDir.dirName}</th>
             <th>${product.salePrice}</th>
             <th>${product.supplier}</th>
             <th>${product.brand}</th>
