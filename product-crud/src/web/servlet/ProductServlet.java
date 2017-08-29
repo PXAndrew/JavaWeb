@@ -5,6 +5,7 @@ import com.shopping.dao.IProductDirDAO;
 import com.shopping.dao.impl.ProductDAOImpl;
 import com.shopping.dao.impl.ProductDirDAOImpl;
 import com.shopping.domain.Product;
+import com.shopping.domain.ProductDir;
 
 import javax.servlet.ServletException;
 import javax.servlet.annotation.WebServlet;
@@ -47,7 +48,6 @@ public class ProductServlet extends HttpServlet {
 
         List<Product> products = productDAO.list();
         req.setAttribute("products", products);
-        req.setAttribute("dirs", productdirDAO.list());
         req.getRequestDispatcher("/WEB-INF/product/views/productList.jsp").forward(req, resp);
 
     }
@@ -97,7 +97,9 @@ public class ProductServlet extends HttpServlet {
         obj.setSalePrice(new BigDecimal(salePrice));
         obj.setCostPrice(new BigDecimal(costPrice));
         obj.setCutoff(Double.valueOf(cutoff));
-        obj.setDir_id(Long.valueOf(dir_id));
+        ProductDir productDir = new ProductDir();
+        productDir.setId(Long.valueOf(dir_id));
+        obj.setProductDir(productDir);
     }
 
     private boolean hasLength(String string) {

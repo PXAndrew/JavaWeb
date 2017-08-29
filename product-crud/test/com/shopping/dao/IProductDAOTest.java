@@ -2,6 +2,7 @@ package com.shopping.dao;
 
 import com.shopping.dao.impl.ProductDAOImpl;
 import com.shopping.domain.Product;
+import com.shopping.domain.ProductDir;
 
 import java.util.List;
 
@@ -12,11 +13,13 @@ public class IProductDAOTest {
     @org.junit.Test
     public void save() throws Exception {
         Product product = new Product();
-        product.setProductName("jiaojian");
-        product.setDir_id(3L);
+        product.setProductName("xxxx罗技");
+//        product.setDir_id(3L);
+        ProductDir productDir = new ProductDir();
+        productDir.setId(4L);
+        product.setProductDir(productDir);
         product.setCutoff(0.6);
         productDAO.save(product);
-
     }
 
     @org.junit.Test
