@@ -1,15 +1,10 @@
 package com.shopping.dao;
 
-import com.shopping.dao.impl.ProductDAOImpl;
 import com.shopping.dao.impl.ProductDirDAOImpl;
-import com.shopping.domain.Product;
 import com.shopping.domain.ProductDir;
-import com.sun.tools.internal.xjc.reader.Ring;
 import org.junit.Test;
 
 import java.util.List;
-
-import static org.junit.Assert.*;
 
 public class IProductDirDAOTest {
 
@@ -36,7 +31,6 @@ public class IProductDirDAOTest {
 
     @Test
     public void delete() throws Exception {
-
         productDirDAO.delete(5L);
     }
 
