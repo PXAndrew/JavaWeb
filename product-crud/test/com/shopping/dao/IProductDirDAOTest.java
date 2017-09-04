@@ -49,7 +49,6 @@ public class IProductDirDAOTest {
 
     @Test
     public void list() throws Exception {
-
         List<ProductDir> list = productDirDAO.list();
         System.out.println(list);
     }
