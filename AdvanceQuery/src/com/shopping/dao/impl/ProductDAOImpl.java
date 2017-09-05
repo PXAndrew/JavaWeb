@@ -8,16 +8,20 @@ import com.shopping.domain.ProductDir;
 import com.shopping.template.IResultSetHandler;
 import com.shopping.template.JdbcTemplate;
 import com.shopping.util.JdbcUtil;
+import com.shopping.util.StringUtil;
 
+import java.math.BigDecimal;
 import java.sql.*;
 import java.util.*;
 
 public class ProductDAOImpl implements IProductDAO {
 
+    IResultSetHandler resultSetHandler = new ProductResultSetHandler();
+
     @Override
     public Product get(Long id) {
         String sqlString = "SELECT * FROM product WHERE id = ?";
-        List<Product> list = JdbcTemplate.dql(sqlString, new ProductResultSetHandler(), id);
+        List<Product> list = JdbcTemplate.dql(sqlString, resultSetHandler, id);
         return list.size() == 1 ? list.get(0) : null;
     }
 
@@ -27,6 +31,30 @@ public class ProductDAOImpl implements IProductDAO {
         String sqlString = "SELECT * FROM product";
         return JdbcTemplate.dql(sqlString, new ProductResultSetHandler());
 
+    }
+
+    @Override
+    public List<Product> query(String name, BigDecimal minSalePrice, BigDecimal maxSalePrice) {
+
+        StringBuilder sqlString = new StringBuilder("SELECT * FROM product WHERE 1 = 1");
+        List params = new ArrayList();
+
+        if (StringUtil.hasLength(name)) {
+            params.add("%" + name + "%");
+            sqlString.append(" AND productName LIKE ?");
+        }
+
+        if (minSalePrice != null) {
+            params.add(minSalePrice);
+            sqlString.append(" AND salePrice >= ?");
+        }
+
+        if (maxSalePrice != null) {
+            params.add(maxSalePrice);
+            sqlString.append(" AND salePrice <= ?");
+        }
+
+        return JdbcTemplate.dql(sqlString.toString(), resultSetHandler, params.toArray());
     }
 
 

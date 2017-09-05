@@ -15,38 +15,22 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="IProductDAOTest.java" pinned="false" current-in-tab="false">
+      <file leaf-file-name="IProductDAOTest.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/test/com/shopping/dao/IProductDAOTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="126">
-              <caret line="11" column="0" lean-forward="false" selection-start-line="11" selection-start-column="0" selection-end-line="11" selection-end-column="0" />
+            <state relative-caret-position="184">
+              <caret line="28" column="7" lean-forward="false" selection-start-line="28" selection-start-column="7" selection-end-line="28" selection-end-column="7" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="IProductDirDAOTest.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/test/com/shopping/dao/IProductDirDAOTest.java">
+      <file leaf-file-name="ProductDAOImpl.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/com/shopping/dao/impl/ProductDAOImpl.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="450">
-              <caret line="25" column="1" lean-forward="true" selection-start-line="25" selection-start-column="1" selection-end-line="25" selection-end-column="1" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="ProductServlet.java" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/web/servlet/ProductServlet.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="306">
-              <caret line="17" column="0" lean-forward="true" selection-start-line="17" selection-start-column="0" selection-end-line="17" selection-end-column="0" />
-              <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="e#1562#1563#0" expanded="true" />
-                <element signature="e#1628#1629#0" expanded="true" />
-              </folding>
+            <state relative-caret-position="185">
+              <caret line="56" column="90" lean-forward="false" selection-start-line="56" selection-start-column="90" selection-end-line="56" selection-end-column="90" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -59,8 +43,8 @@
         <option value="Arquillian JUnit Test Class" />
         <option value="Jsp File" />
         <option value="Interface" />
-        <option value="Class" />
         <option value="JUnit4 Test Class" />
+        <option value="Class" />
       </list>
     </option>
   </component>
@@ -88,13 +72,15 @@
         <option value="$PROJECT_DIR$/web/WEB-INF/product/views/productEdit.jsp" />
         <option value="$PROJECT_DIR$/src/com/shopping/domain/Product.java" />
         <option value="$PROJECT_DIR$/web/WEB-INF/product/views/productList.jsp" />
-        <option value="$PROJECT_DIR$/src/com/shopping/dao/IProductDAO.java" />
         <option value="$PROJECT_DIR$/src/com/shopping/dao/IProductDirDAO.java" />
-        <option value="$PROJECT_DIR$/src/com/shopping/dao/impl/ProductDAOImpl.java" />
         <option value="$PROJECT_DIR$/src/com/shopping/dao/impl/ProductDirDAOImpl.java" />
-        <option value="$PROJECT_DIR$/test/com/shopping/dao/IProductDAOTest.java" />
         <option value="$PROJECT_DIR$/test/com/shopping/dao/IProductDirDAOTest.java" />
+        <option value="$PROJECT_DIR$/src/com/shopping/dao/IProductDAO.java" />
         <option value="$PROJECT_DIR$/src/web/servlet/ProductServlet.java" />
+        <option value="$PROJECT_DIR$/src/com/shopping/template/StringUtil.java" />
+        <option value="$PROJECT_DIR$/src/com/shopping/util/StringUtil.java" />
+        <option value="$PROJECT_DIR$/src/com/shopping/dao/impl/ProductDAOImpl.java" />
+        <option value="$PROJECT_DIR$/test/com/shopping/dao/IProductDAOTest.java" />
       </list>
     </option>
   </component>
@@ -124,19 +110,16 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="PackagesPane" />
       <pane id="AndroidView" />
+      <pane id="PackagesPane" />
+      <pane id="Scope" />
+      <pane id="Scratches" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
             <path>
               <item name="AdvanceQuery" type="b2602c69:ProjectViewProjectNode" />
               <item name="AdvanceQuery" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="AdvanceQuery" type="b2602c69:ProjectViewProjectNode" />
-              <item name="AdvanceQuery" type="462c0819:PsiDirectoryNode" />
-              <item name=".idea" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="AdvanceQuery" type="b2602c69:ProjectViewProjectNode" />
@@ -175,12 +158,32 @@
               <item name="AdvanceQuery" type="b2602c69:ProjectViewProjectNode" />
               <item name="AdvanceQuery" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="shopping" type="462c0819:PsiDirectoryNode" />
+              <item name="template" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="AdvanceQuery" type="b2602c69:ProjectViewProjectNode" />
+              <item name="AdvanceQuery" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="shopping" type="462c0819:PsiDirectoryNode" />
+              <item name="util" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="AdvanceQuery" type="b2602c69:ProjectViewProjectNode" />
+              <item name="AdvanceQuery" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="servlet" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="AdvanceQuery" type="b2602c69:ProjectViewProjectNode" />
               <item name="AdvanceQuery" type="462c0819:PsiDirectoryNode" />
               <item name="test" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="AdvanceQuery" type="b2602c69:ProjectViewProjectNode" />
+              <item name="AdvanceQuery" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="462c0819:PsiDirectoryNode" />
+              <item name="dao" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="AdvanceQuery" type="b2602c69:ProjectViewProjectNode" />
@@ -212,14 +215,12 @@
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
-      <pane id="Scratches" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="project.structure.last.edited" value="Artifacts" />
+    <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
     <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
@@ -256,7 +257,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.IProductDirDAOTest.list">
+  <component name="RunManager" selected="JUnit.IProductDAOTest.query">
     <configuration name="IProductDAOTest.get" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
         <pattern>
@@ -270,6 +271,31 @@
       <option name="PACKAGE_NAME" value="com.shopping.dao" />
       <option name="MAIN_CLASS_NAME" value="com.shopping.dao.IProductDAOTest" />
       <option name="METHOD_NAME" value="get" />
+      <option name="TEST_OBJECT" value="method" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="singleModule" />
+      </option>
+      <envs />
+      <patterns />
+    </configuration>
+    <configuration name="IProductDAOTest.query" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
+        <pattern>
+          <option name="PATTERN" value="com.shopping.dao.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <module name="product-crud" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PACKAGE_NAME" value="com.shopping.dao" />
+      <option name="MAIN_CLASS_NAME" value="com.shopping.dao.IProductDAOTest" />
+      <option name="METHOD_NAME" value="query" />
       <option name="TEST_OBJECT" value="method" />
       <option name="VM_PARAMETERS" value="-ea" />
       <option name="PARAMETERS" />
@@ -345,31 +371,6 @@
       <option name="PACKAGE_NAME" value="com.shopping.dao" />
       <option name="MAIN_CLASS_NAME" value="com.shopping.dao.IProductDirDAOTest" />
       <option name="METHOD_NAME" value="list" />
-      <option name="TEST_OBJECT" value="method" />
-      <option name="VM_PARAMETERS" value="-ea" />
-      <option name="PARAMETERS" />
-      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
-      <option name="ENV_VARIABLES" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <option name="TEST_SEARCH_SCOPE">
-        <value defaultName="singleModule" />
-      </option>
-      <envs />
-      <patterns />
-    </configuration>
-    <configuration name="IProductDirDAOTest.update" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
-        <pattern>
-          <option name="PATTERN" value="com.shopping.dao.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <module name="product-crud" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="PACKAGE_NAME" value="com.shopping.dao" />
-      <option name="MAIN_CLASS_NAME" value="com.shopping.dao.IProductDirDAOTest" />
-      <option name="METHOD_NAME" value="update" />
       <option name="TEST_OBJECT" value="method" />
       <option name="VM_PARAMETERS" value="-ea" />
       <option name="PARAMETERS" />
@@ -464,19 +465,19 @@
       <listeners />
     </configuration>
     <list size="5">
-      <item index="0" class="java.lang.String" itemvalue="JUnit.IProductDirDAOTest.update" />
-      <item index="1" class="java.lang.String" itemvalue="JUnit.IProductDirDAOTest.delete" />
-      <item index="2" class="java.lang.String" itemvalue="JUnit.IProductDAOTest.get" />
-      <item index="3" class="java.lang.String" itemvalue="JUnit.IProductDirDAOTest" />
-      <item index="4" class="java.lang.String" itemvalue="JUnit.IProductDirDAOTest.list" />
+      <item index="0" class="java.lang.String" itemvalue="JUnit.IProductDirDAOTest.delete" />
+      <item index="1" class="java.lang.String" itemvalue="JUnit.IProductDAOTest.get" />
+      <item index="2" class="java.lang.String" itemvalue="JUnit.IProductDirDAOTest" />
+      <item index="3" class="java.lang.String" itemvalue="JUnit.IProductDirDAOTest.list" />
+      <item index="4" class="java.lang.String" itemvalue="JUnit.IProductDAOTest.query" />
     </list>
     <recent_temporary>
       <list size="5">
-        <item index="0" class="java.lang.String" itemvalue="JUnit.IProductDirDAOTest.list" />
-        <item index="1" class="java.lang.String" itemvalue="JUnit.IProductDirDAOTest" />
-        <item index="2" class="java.lang.String" itemvalue="JUnit.IProductDAOTest.get" />
-        <item index="3" class="java.lang.String" itemvalue="JUnit.IProductDirDAOTest.delete" />
-        <item index="4" class="java.lang.String" itemvalue="JUnit.IProductDirDAOTest.update" />
+        <item index="0" class="java.lang.String" itemvalue="JUnit.IProductDAOTest.query" />
+        <item index="1" class="java.lang.String" itemvalue="JUnit.IProductDirDAOTest.list" />
+        <item index="2" class="java.lang.String" itemvalue="JUnit.IProductDirDAOTest" />
+        <item index="3" class="java.lang.String" itemvalue="JUnit.IProductDAOTest.get" />
+        <item index="4" class="java.lang.String" itemvalue="JUnit.IProductDirDAOTest.delete" />
       </list>
     </recent_temporary>
   </component>
@@ -500,15 +501,17 @@
       <workItem from="1503992727724" duration="3229000" />
       <workItem from="1504492175709" duration="8182000" />
       <workItem from="1504514552229" duration="2232000" />
+      <workItem from="1504578759355" duration="73000" />
+      <workItem from="1504578906932" duration="5608000" />
     </task>
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="IProductDirDAOTest - 2017.08.29 at 15h 49m 26s.xml">
-      <configuration name="IProductDirDAOTest" configurationId="JUnit" />
+    <history-entry file="IProductDAOTest_query - 2017.09.05 at 14h 58m 30s.xml">
+      <configuration name="IProductDAOTest.query" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="IProductDirDAOTest_delete - 2017.08.28 at 15h 29m 21s.xml">
-      <configuration name="IProductDirDAOTest.delete" configurationId="JUnit" />
+    <history-entry file="IProductDAOTest_query - 2017.09.05 at 14h 59m 32s.xml">
+      <configuration name="IProductDAOTest.query" configurationId="JUnit" />
     </history-entry>
     <history-entry file="IProductDirDAOTest_get - 2017.08.28 at 15h 27m 11s.xml">
       <configuration name="IProductDirDAOTest.get" configurationId="JUnit" />
@@ -536,7 +539,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="51047000" />
+    <option name="totallyTimeSpent" value="56728000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -549,6 +552,7 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1440" height="821" extended-state="0" />
+    <editor active="true" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32958034" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
@@ -559,12 +563,12 @@
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.2603306" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.3677686" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3292011" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.19384836" sideWeight="0.49449036" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.19957082" sideWeight="0.49449036" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Web" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.19098713" sideWeight="0.5055096" order="4" side_tool="true" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.15665236" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
@@ -595,14 +599,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/web/WEB-INF/product/views/productEdit.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="846">
-          <caret line="47" column="44" lean-forward="false" selection-start-line="47" selection-start-column="44" selection-end-line="47" selection-end-column="44" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/web/WEB-INF/product/views/productList.jsp">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="684">
@@ -657,14 +653,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/web/WEB-INF/product/views/productEdit.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="846">
-          <caret line="47" column="44" lean-forward="false" selection-start-line="47" selection-start-column="44" selection-end-line="47" selection-end-column="44" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/web/WEB-INF/product/views/productEdit.jsp" />
     <entry file="file://$PROJECT_DIR$/web/WEB-INF/product/views/productList.jsp">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="684">
@@ -692,11 +681,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="72">
           <caret line="4" column="35" lean-forward="false" selection-start-line="4" selection-start-column="35" selection-end-line="4" selection-end-column="35" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#1562#1563#0" expanded="true" />
-            <element signature="e#1628#1629#0" expanded="true" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -853,14 +838,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/web/WEB-INF/product/views/productEdit.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="225">
-          <caret line="46" column="28" lean-forward="false" selection-start-line="46" selection-start-column="28" selection-end-line="46" selection-end-column="28" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/web/WEB-INF/product/views/productEdit.jsp" />
     <entry file="file://$PROJECT_DIR$/.classpath">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
@@ -888,7 +866,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="126">
           <caret line="9" column="0" lean-forward="false" selection-start-line="9" selection-start-column="0" selection-end-line="9" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -896,22 +873,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="72">
           <caret line="7" column="33" lean-forward="false" selection-start-line="7" selection-start-column="33" selection-end-line="7" selection-end-column="33" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/shopping/dao/IProductDAO.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="90">
-          <caret line="6" column="0" lean-forward="false" selection-start-line="6" selection-start-column="0" selection-end-line="6" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/shopping/domain/ProductDir.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="162">
-          <caret line="9" column="19" lean-forward="false" selection-start-line="9" selection-start-column="19" selection-end-line="9" selection-end-column="19" />
           <folding />
         </state>
       </provider>
@@ -924,10 +885,28 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/shopping/dao/impl/ProductDAOImpl.java">
+    <entry file="file://$PROJECT_DIR$/test/com/shopping/dao/IProductDirDAOTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="38">
-          <caret line="14" column="52" lean-forward="false" selection-start-line="14" selection-start-column="52" selection-end-line="14" selection-end-column="52" />
+        <state relative-caret-position="450">
+          <caret line="25" column="1" lean-forward="false" selection-start-line="25" selection-start-column="1" selection-end-line="25" selection-end-column="1" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/shopping/domain/ProductDir.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="162">
+          <caret line="9" column="19" lean-forward="false" selection-start-line="9" selection-start-column="19" selection-end-line="9" selection-end-column="19" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/shopping/util/StringUtil.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="72">
+          <caret line="4" column="13" lean-forward="false" selection-start-line="4" selection-start-column="13" selection-end-line="4" selection-end-column="13" />
           <folding />
         </state>
       </provider>
@@ -940,33 +919,35 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/test/com/shopping/dao/IProductDAOTest.java">
+    <entry file="file://$PROJECT_DIR$/src/web/servlet/ProductServlet.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="126">
-          <caret line="11" column="0" lean-forward="false" selection-start-line="11" selection-start-column="0" selection-end-line="11" selection-end-column="0" />
+        <state relative-caret-position="243">
+          <caret line="23" column="34" lean-forward="true" selection-start-line="23" selection-start-column="34" selection-end-line="23" selection-end-column="34" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/test/com/shopping/dao/IProductDirDAOTest.java">
+    <entry file="file://$PROJECT_DIR$/src/com/shopping/dao/IProductDAO.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="450">
-          <caret line="25" column="1" lean-forward="true" selection-start-line="25" selection-start-column="1" selection-end-line="25" selection-end-column="1" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
+        <state relative-caret-position="342">
+          <caret line="22" column="1" lean-forward="true" selection-start-line="22" selection-start-column="1" selection-end-line="22" selection-end-column="1" />
+          <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/web/servlet/ProductServlet.java">
+    <entry file="file://$PROJECT_DIR$/src/com/shopping/dao/impl/ProductDAOImpl.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="306">
-          <caret line="17" column="0" lean-forward="true" selection-start-line="17" selection-start-column="0" selection-end-line="17" selection-end-column="0" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#1562#1563#0" expanded="true" />
-            <element signature="e#1628#1629#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="185">
+          <caret line="56" column="90" lean-forward="false" selection-start-line="56" selection-start-column="90" selection-end-line="56" selection-end-column="90" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/test/com/shopping/dao/IProductDAOTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="184">
+          <caret line="28" column="7" lean-forward="false" selection-start-line="28" selection-start-column="7" selection-end-line="28" selection-end-column="7" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -1024,7 +1005,7 @@
       </state>
       <state key="ModuleStructureConfigurable.UI">
         <settings>
-          <last-edited>Web|product-crud</last-edited>
+          <last-edited>product-crud</last-edited>
           <splitter-proportions>
             <option name="proportions">
               <list>

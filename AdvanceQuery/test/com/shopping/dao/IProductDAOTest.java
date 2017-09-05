@@ -3,6 +3,7 @@ package com.shopping.dao;
 import com.shopping.dao.impl.ProductDAOImpl;
 import com.shopping.domain.Product;
 import com.shopping.domain.ProductDir;
+import org.junit.Test;
 
 import java.util.List;
 
@@ -19,6 +20,17 @@ public class IProductDAOTest {
     @org.junit.Test
     public void list() throws Exception {
         List<Product> list = productDAO.list();
+        for (Product product :
+                list) {
+            System.out.println(product);
+        }
+    }
+
+    @Test
+    public void query() throws Exception {
+
+        List<Product> list = productDAO.query("M", null, null);
+        System.out.println(list.size());
         for (Product product :
                 list) {
             System.out.println(product);
