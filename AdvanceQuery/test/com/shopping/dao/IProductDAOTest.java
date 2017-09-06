@@ -2,9 +2,10 @@ package com.shopping.dao;
 
 import com.shopping.dao.impl.ProductDAOImpl;
 import com.shopping.domain.Product;
-import com.shopping.domain.ProductDir;
+import com.shopping.query.ProductQueryObject;
 import org.junit.Test;
 
+import java.math.BigDecimal;
 import java.util.List;
 
 public class IProductDAOTest {
@@ -27,9 +28,23 @@ public class IProductDAOTest {
     }
 
     @Test
-    public void query() throws Exception {
+    public void query2() throws Exception {
 
-        List<Product> list = productDAO.query("M", null, null);
+        List<Product> list = productDAO.query2("M", new BigDecimal(150), new BigDecimal(300));
+        System.out.println(list.size());
+        for (Product product :
+                list) {
+            System.out.println(product);
+        }
+    }
+
+    @Test
+    public void query3() throws Exception {
+        ProductQueryObject productQueryObject = new ProductQueryObject();
+        productQueryObject.setName("M");
+        productQueryObject.setMinSalePrice(new BigDecimal(150));
+        productQueryObject.setMaxSalePrice(new BigDecimal(300));
+        List<Product> list = productDAO.query3(productQueryObject);
         System.out.println(list.size());
         for (Product product :
                 list) {
