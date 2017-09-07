@@ -149,6 +149,13 @@ public class ProductDAOImpl implements IProductDAO {
         return JdbcTemplate.dql(sqlString.toString(), resultSetHandler, params.toArray());
     }
 
+    @Override
+    public List<Product> query4(ProductQueryObject productQueryObject) {
+        String sqlString = "SELECT * FROM product" + productQueryObject.getQuery();
+        List<Object> paramters = productQueryObject.getParamters();
+        return JdbcTemplate.dql(sqlString, resultSetHandler, paramters.toArray());
+    }
+
 
     class ProductResultSetHandler implements IResultSetHandler<Product> {
 

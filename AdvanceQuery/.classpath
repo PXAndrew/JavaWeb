@@ -12,6 +12,6 @@
 	<classpathentry kind="lib" path="web/WEB-INF/lib/servlet-api.jar"/>
 	<classpathentry kind="lib" path="web/WEB-INF/lib/taglibs-standard-impl-1.2.5.jar"/>
 	<classpathentry kind="lib" path="web/WEB-INF/lib/taglibs-standard-spec-1.2.5.jar"/>
-	<classpathentry kind="var" path="APPLICATION_HOME_DIR/lib/junit-4.12.jar"/>
+	<classpathentry kind="var" path="APPLICATION_HOME_DIR/plugins/junit/lib/junit-jupiter-api-5.0.0-RC2.jar"/>
 	<classpathentry kind="output" path="web/WEB-INF/classes"/>
 </classpath>

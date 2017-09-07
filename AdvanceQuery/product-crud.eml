@@ -29,5 +29,5 @@
 	<lib name="taglibs-standard-spec-1.2.5.jar" scope="COMPILE">
 		<relative-module-cls project-related="jar://$PROJECT_DIR$/web/WEB-INF/lib/taglibs-standard-spec-1.2.5.jar!/"/>
 	</lib>
-	<lib name="JUnit4" scope="TEST"/>
+	<lib name="JUnit5" scope="TEST"/>
 </component>

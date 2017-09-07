@@ -24,4 +24,6 @@ public interface IProductDAO {
     List<Product> query2(String name, BigDecimal minSalePrice, BigDecimal maxSalePrice);
 
     List<Product> query3(ProductQueryObject productQueryObject);
+
+    List<Product> query4(ProductQueryObject productQueryObject);
 }

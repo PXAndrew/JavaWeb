@@ -12,7 +12,14 @@
     <title>ProductList</title>
 </head>
 <body>
-<a href="${pageContext.request.contextPath}/product?cmd=edit">添加商品</a>
+
+<form action="${pageContext.request.contextPath}/product?cmd=list" method="post">
+    商品名称<input type="search" name="name" value="${productQueryObject.name}">
+    零售价格<input type="number" name="minSalePrice" value="${productQueryObject.minSalePrice}">-
+           <input type="number" name="maxSalePrice" value="${productQueryObject.maxSalePrice}">
+           <input type="submit" value="查询">
+</form>
+<%--<a href="${pageContext.request.contextPath}/product?cmd=edit">添加商品</a>--%>
 <table border="1" width="100%" cellpadding="0" cellspacing="0">
     <tr style="background-color: orange">
         <th>货品编号</th>
