@@ -8,50 +8,24 @@ import java.util.ArrayList;
 import java.util.List;
 
 @Data
-public class ProductQueryObject implements IQuery {
+public class ProductQueryObject extends QueryObject {
 
     String name;
     BigDecimal minSalePrice;
     BigDecimal maxSalePrice;
 
-    private List<Object> paramters = new ArrayList<>();
-    private List<String> condition = new ArrayList<>();
-
     @Override
-    public String getQuery() {
-
-        StringBuilder sqlString = new StringBuilder();
-
+    protected void customizedQuery() {
         if (StringUtil.hasLength(name)) {
-            paramters.add("%" + name + "%");
-            condition.add("productName LIKE ?");
+            addQuery("productName LIKE ?", "%" + name + "%");
         }
 
         if (minSalePrice != null) {
-            paramters.add(minSalePrice);
-            condition.add("salePrice >= ?");
+            addQuery("salePrice >= ?", minSalePrice);
         }
 
         if (maxSalePrice != null) {
-            paramters.add(maxSalePrice);
-            condition.add("salePrice <= ?");
+            addQuery("salePrice <= ?", maxSalePrice);
         }
-
-        for (int i = 0; i < condition.size(); i++) {
-            if (i == 0) {
-                sqlString.append(" WHERE ");
-            } else {
-                sqlString.append(" AND ");
-            }
-            sqlString.append(condition.get(i));
-        }
-
-        return sqlString.toString();
     }
-
-    @Override
-    public List<Object> getParamters() {
-        return paramters;
-    }
-
 }

@@ -43,6 +43,7 @@ public class ProductServlet extends HttpServlet {
         List<Product> products = productDAO.query4(reqParamsToObject(req));
         req.setAttribute("products", products);
         req.setAttribute("productQueryObject", reqParamsToObject(req));
+        req.setAttribute("dirs", productdirDAO.list());
         req.getRequestDispatcher("/WEB-INF/product/views/productList.jsp").forward(req, resp);
     }
 

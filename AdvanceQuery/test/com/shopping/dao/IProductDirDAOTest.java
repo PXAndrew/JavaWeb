@@ -2,7 +2,7 @@ package com.shopping.dao;
 
 import com.shopping.dao.impl.ProductDirDAOImpl;
 import com.shopping.domain.ProductDir;
-import org.junit.jupiter.api.Test;
+import org.junit.Test;
 
 import java.util.List;
 

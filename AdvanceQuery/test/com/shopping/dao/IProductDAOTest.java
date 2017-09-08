@@ -3,7 +3,7 @@ package com.shopping.dao;
 import com.shopping.dao.impl.ProductDAOImpl;
 import com.shopping.domain.Product;
 import com.shopping.query.ProductQueryObject;
-import org.junit.jupiter.api.Test;
+import org.junit.Test;
 
 import java.math.BigDecimal;
 import java.util.List;
