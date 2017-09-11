@@ -6,6 +6,7 @@ import com.shopping.dao.impl.ProductDAOImpl;
 import com.shopping.dao.impl.ProductDirDAOImpl;
 import com.shopping.domain.Product;
 import com.shopping.query.ProductQueryObject;
+import com.shopping.query.QueryObject;
 import com.shopping.util.StringUtil;
 
 import javax.servlet.ServletException;
@@ -60,6 +61,14 @@ public class ProductServlet extends HttpServlet {
 
         if (StringUtil.hasLength(request.getParameter("maxSalePrice"))) {
             productQueryObject.setMaxSalePrice(new BigDecimal(request.getParameter("maxSalePrice")));
+        }
+
+        if (StringUtil.hasLength(request.getParameter("dirID"))) {
+            productQueryObject.setDirID(Long.valueOf(request.getParameter("dirID")));
+        }
+
+        if (StringUtil.hasLength(request.getParameter("keyword"))) {
+            productQueryObject.setKeyword(request.getParameter("keyword"));
         }
 
         return productQueryObject;

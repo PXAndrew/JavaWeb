@@ -56,8 +56,8 @@ public class IProductDAOTest {
     public void query4() throws Exception {
         ProductQueryObject productQueryObject = new ProductQueryObject();
         productQueryObject.setName("M");
-        productQueryObject.setMinSalePrice(new BigDecimal(150));
-        productQueryObject.setMaxSalePrice(new BigDecimal(300));
+        productQueryObject.setMinSalePrice(new BigDecimal(1));
+        productQueryObject.setMaxSalePrice(new BigDecimal(500));
         List<Product> list = productDAO.query4(productQueryObject);
         System.out.println(list.size());
         for (Product product :

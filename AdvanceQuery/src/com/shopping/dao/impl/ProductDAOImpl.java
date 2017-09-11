@@ -153,6 +153,8 @@ public class ProductDAOImpl implements IProductDAO {
     public List<Product> query4(ProductQueryObject productQueryObject) {
         String sqlString = "SELECT * FROM product" + productQueryObject.getQuery();
         List<Object> paramters = productQueryObject.getParamters();
+        System.out.println(sqlString);
+        System.out.println(paramters);
         return JdbcTemplate.dql(sqlString, resultSetHandler, paramters.toArray());
     }
 
@@ -185,5 +187,4 @@ public class ProductDAOImpl implements IProductDAO {
             return list;
         }
     }
-
 }

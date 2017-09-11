@@ -12,17 +12,17 @@
     <title>ProductList</title>
 </head>
 <body>
-<form action="${pageContext.request.contextPath}/product?cmd=list" method="post">
-    商品名称<input type="search" name="name" value="${productQueryObject.name}">
-    零售价格<input type="number" name="minSalePrice" value="${productQueryObject.minSalePrice}">-
+<form action="${pageContext.request.contextPath}/ ?cmd=list" method="post">
+    商品名称 <input type="search" name="name" value="${productQueryObject.name}">
+    零售价格 <input type="number" name="minSalePrice" value="${productQueryObject.minSalePrice}">-
            <input type="number" name="maxSalePrice" value="${productQueryObject.maxSalePrice}">
-            商品分类<select name="dirID">
+    商品分类 <select name="dirID">
                 <option value="-1">全部分类</option>
                 <c:forEach items="${dirs}" var="dir">
-                    <option value="${dir.id}">${dir.dirName}</option>
+                    <option value="${dir.id}" ${productQueryObject.dirID == dir.id ? "selected" : ""}>${dir.dirName}</option>
                 </c:forEach>
             </select>
-
+    关键字 <input type="text" name="keyword" value="${productQueryObject.keyword}" placeholder="商品名称/商品品牌" style="width: 120px;">
            <input type="submit" value="查询">
 </form>
 <%--<a href="${pageContext.request.contextPath}/product?cmd=edit">添加商品</a>--%>
